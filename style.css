@@ -1,0 +1,109 @@
+body {
+    display:flex;
+    flex-direction: column;
+    background-color: #8AC6BF;
+    
+}
+h1 {
+    color:#F28C81
+}
+h2,p {
+    color: #01395C;
+}
+.containers {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F0E5D6;
+    border-style: solid;
+    border-color:#01395C ;
+    border-radius: 20px;
+
+    
+
+}
+/*Se refiere al contenedor principal de las tres secciones*/
+#main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+/**Es el color original de los circulos en el bloque uno y tres*/
+.negro,.negro2{
+
+    border-radius: 200px;
+    background-color: black;
+    padding:30%;
+    color:black;
+    font-size: larger;
+    margin:15%;
+    max-width:25%;
+    max-height:25%;
+
+}
+.semaforo {
+    background-color: rgb(41, 41, 41);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width:30%;
+    height:80%;
+    object-fit:inherit;
+
+}
+/*SEGUNDO BLOQUE*/
+/*Se refiere al tamaño de la imagen del segundo bloque.**/
+#semaforo-img {
+    max-width:75%;
+    max-height:75%;
+}
+/**TERCER BLOQUE */
+/*Animación de css de la parte derecha**/
+#rojo {
+    animation-name: cambioRojo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#amarillo {
+    animation-name: cambioAmarillo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#verde {
+    animation-name: cambioVerde;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes cambioRojo {
+    from {background-color: black;}
+    to {background-color:red;}
+}
+@keyframes cambioAmarillo {
+    from {background-color: black;}
+    to {background-color:yellow;}
+}
+@keyframes cambioVerde {
+    from {background-color: black;}
+    to {background-color:green;}
+}
+
+
+/**Parte de cambio de color con boton*/
+#colorButton {
+    margin-left:5%;
+    border-style: solid;
+    border-color: #01395C;
+    border-radius: 40px;
+    background-color: azure;
+    margin-bottom: 5px;
+}
+#colorButton:hover {
+    background-color: #7C96A8;
+}
+#semaforo_boton {
+    height: 75%;
+}

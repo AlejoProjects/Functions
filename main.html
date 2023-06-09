@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Semaforos</h1>
+    <div id="main_container">
+        <div id="semaforo_css" class="containers">
+            <h2>Semaforo con css</h2>
+            <p>Animación de css</p>
+            <div class="semaforo">
+                <p id="rojo" class="negro">.</p>
+                <p id="amarillo" class="negro">.</p>
+                <p id="verde" class="negro">.</p>
+            </div>
+        </div>
+        <div class="containers">
+            <h2 id="titulo">Semaforo animación con js</h2>
+            <p>quitando y colocando imagenes con js</p>
+            <img id="semaforo-img" src="img/ROJO.png" width="180" alt="Semaforo que si funciona">
+        </div>
+        <div class="containers">
+            <h2 id="titulo">Semaforo con boton</h2>
+            <p>cambiando los colores con el boton</p>
+            <button id="colorButton" onClick="cambiaColor()">cambiar</button>
+            <div id="semaforo_boton" class="semaforo">
+                <p id="rojo2" class="negro2">.</p>
+                <p id="amarillo2" class="negro2">.</p>
+                <p id="verde2" class="negro2">.</p>
+            </div>
+       </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+
+</html>
